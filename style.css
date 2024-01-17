@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAEF9B;
+    color: #647D87;
+    text-align: center; 
+}
+
+.timer-container {
+    margin: 150px auto 20px auto; 
+    background-color: #F6D776;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    
+}
+
+.time {
+    text-align: center;
+    cursor: pointer;
+}
+
+.timer-container .time {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.9rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.8rem;
+    color: #ffffff;
+    background-color: #6DA4AA;
+    transition: 0.4s;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+#results {
+    display: none;
+    margin-top: 20px;
+}
+
+#lapsTable {
+    font-family: 'Roboto Mono', monospace;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+th, td {
+    padding: 10px;
+    color: #647D87;
+}
+
+th {
+    width: 170px;
+}
+
+.results li {
+    list-style-type: none;
+}
+
+@media (max-width: 800px) {
+
+    .buttons button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .timer-container {
+        margin-top: 130px;
+        padding: 1rem 1.5rem;
+    }
+
+    .timer-container .time {
+        font-size: 2.5rem;
+    }
+
+    #lapsTable {
+        font-size: 1.2rem;
+    }
+
+    .buttons button {
+        margin: 0 0.7rem;
+        padding: 0.5rem 0.7rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .buttons button svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .timer-container {
+        margin-top: 110px;
+        padding: 1rem 1rem;
+    }
+
+    .timer-container .time {
+        font-size: 2rem;
+    }
+
+    #lapsTable {
+        font-size: 1rem;
+    }
+
+    .buttons button {
+        margin: 0 0.5rem;
+        padding: 0.4rem 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .timer-container {
+        margin-top: 90px;
+        padding: 0.9rem 0.9rem;
+    }
+
+    .timer-container .time {
+        font-size: 1.75rem;
+    }
+
+    #lapsTable {
+        font-size: 0.8rem;
+    }
+
+}
